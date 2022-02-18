@@ -27,7 +27,7 @@ import java.util.ArrayList;
 
 public class NewReleaseAdapter extends RecyclerView.Adapter<NewReleaseAdapter.ViewHolder> {
 
-    private ArrayList<NewReleaseModel> data;
+    private final ArrayList<NewReleaseModel> data;
     Context context;
     Fragment currentFragment;
     // DashboardFragment dashboardFragment = new DashboardFragment();
@@ -87,7 +87,7 @@ public class NewReleaseAdapter extends RecyclerView.Adapter<NewReleaseAdapter.Vi
         return 6;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
 
         private final ShapeableImageView imgIcon;
         private final TextView songName;

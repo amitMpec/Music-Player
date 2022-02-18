@@ -91,7 +91,7 @@ public class HomeFragment extends Fragment {
         });
         return root;
     }
-    private void loadSongs() throws IOException {
+     void loadSongs() throws IOException {
         //fetch the audio files from storage
         ContentResolver contentResolver = getActivity().getContentResolver();
         Uri uri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
@@ -114,8 +114,6 @@ public class HomeFragment extends Fragment {
                 modelAudio.setDuration(duration);
                 modelAudio.setSingerNames(artist);
                 modelAudio.setImgIcons(R.drawable.scenery);
-
-
                 newData.add(modelAudio);
 
 //                    modelAudio.setaudioTitle(title);

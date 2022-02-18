@@ -8,12 +8,13 @@
     tools:context=".Player">
 
     <com.google.android.exoplayer2.ui.PlayerView
-            android:id="@+id/video_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:fastforward_increment="30000"
-            app:rewind_increment="30000"
-            app:show_timeout="10000"
-            tools:ignore="MissingConstraints" />
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:fastforward_increment="30000"
+        app:rewind_increment="30000"
+        app:show_timeout="10000" />
 
 </FrameLayout>
