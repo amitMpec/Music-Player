@@ -84,7 +84,7 @@ public class NewReleaseAdapter extends RecyclerView.Adapter<NewReleaseAdapter.Vi
 
     @Override
     public int getItemCount() {
-        return 6;
+        return data.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
