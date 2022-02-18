@@ -2,6 +2,7 @@ package com.example.musicplayer;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -31,12 +32,13 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
 
 
+
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-
+        Toast.makeText(this, "Hello music app", Toast.LENGTH_SHORT).show();
         navView.setVisibility(View.VISIBLE);
     }
 }

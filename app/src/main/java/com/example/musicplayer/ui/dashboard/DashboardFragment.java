@@ -42,12 +42,12 @@ public class DashboardFragment extends Fragment {
     private DashboardViewModel dashboardViewModel;
     String url;
     Bundle args;
-    String decider= "blank";
+    String decider = "blank";
     private PlayerView playerView;
     private SimpleExoPlayer player;
     private boolean playWhenReady = true;
     private int currentWindow = 0;
-    private long playbackPositioin =0;
+    private long playbackPositioin = 0;
     private PlaybackStateListener playbackStateListener;
     private static final String TAG = DashboardFragment.class.getName();
 
@@ -57,7 +57,7 @@ public class DashboardFragment extends Fragment {
                 new ViewModelProvider(this).get(DashboardViewModel.class);
         View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
         final TextView textView = root.findViewById(R.id.text_dashboard);
-         args = this.getArguments();
+        args = this.getArguments();
         assert args != null;
         url = args.getString("url");
         playerView = root.findViewById(R.id.video_view);
@@ -86,7 +86,7 @@ public class DashboardFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        if(Util.SDK_INT>=24){
+        if (Util.SDK_INT >= 24) {
             try {
                 initializedPlayer();
             } catch (IOException e) {
@@ -98,8 +98,8 @@ public class DashboardFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-     //   hideSystemUi();
-        if((Util.SDK_INT<24||player==null)){
+        //   hideSystemUi();
+        if ((Util.SDK_INT < 24 || player == null)) {
             try {
                 initializedPlayer();
             } catch (IOException e) {
@@ -121,7 +121,7 @@ public class DashboardFragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        if(Util.SDK_INT<24){
+        if (Util.SDK_INT < 24) {
             releasePlayer();
         }
     }
@@ -129,13 +129,13 @@ public class DashboardFragment extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
-        if(Util.SDK_INT>=24){
+        if (Util.SDK_INT >= 24) {
             releasePlayer();
         }
     }
 
     private void releasePlayer() {
-        if (player!= null){
+        if (player != null) {
             playWhenReady = player.getPlayWhenReady();
             playbackPositioin = player.getCurrentPosition();
             currentWindow = player.getCurrentWindowIndex();
@@ -147,14 +147,14 @@ public class DashboardFragment extends Fragment {
 
     public void initializedPlayer() throws IOException {
 
-SimpleExoPlayer    player = new SimpleExoPlayer.Builder(getContext()).build();
+        SimpleExoPlayer player = new SimpleExoPlayer.Builder(getContext()).build();
         playerView.setPlayer(player);
-    MediaItem mediaItem = MediaItem.fromUri(url);
-    player.setMediaItem(mediaItem);
+        MediaItem mediaItem = MediaItem.fromUri(url);
+        player.setMediaItem(mediaItem);
 
-    player.prepare();
- //   MediaItem secondMediaItem = MediaItem.fromUri(getString(R.string.media_url_mp3));
-  //  player.addMediaItem(secondMediaItem);
+        player.prepare();
+        //   MediaItem secondMediaItem = MediaItem.fromUri(getString(R.string.media_url_mp3));
+        //  player.addMediaItem(secondMediaItem);
 
 //        MediaItem mediaItem = new MediaItem.Builder()
 //                .setUri(url)
@@ -178,7 +178,8 @@ SimpleExoPlayer    player = new SimpleExoPlayer.Builder(getContext()).build();
 //        mediaPlayer.prepare();
 //   //     mediaController.setMediaPlayer((MediaController.MediaPlayerControl) mediaPlayer);
 //        mediaPlayer.start();
-    }
+}
+
 
      class PlaybackStateListener implements Player.EventListener {
 
