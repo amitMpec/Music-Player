@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Toast.makeText(this, "Hello music app", Toast.LENGTH_SHORT).show();
         navView.setVisibility(View.VISIBLE);
     }
 }
