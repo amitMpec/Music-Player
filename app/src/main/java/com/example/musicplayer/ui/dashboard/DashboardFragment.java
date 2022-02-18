@@ -36,6 +36,7 @@ import com.google.android.material.bottomnavigation.LabelVisibilityMode;
 
 import java.io.IOException;
 import java.net.URI;
+import java.util.Objects;
 
 public class DashboardFragment extends Fragment {
 
@@ -63,7 +64,7 @@ public class DashboardFragment extends Fragment {
         playerView = root.findViewById(R.id.video_view);
         playbackStateListener = new PlaybackStateListener();
 
-        BottomNavigationView navBar = getActivity().findViewById(R.id.nav_view);
+        BottomNavigationView navBar = requireActivity().findViewById(R.id.nav_view);
         navBar.setVisibility(View.INVISIBLE);
 
 //        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
@@ -147,7 +148,7 @@ public class DashboardFragment extends Fragment {
 
     public void initializedPlayer() throws IOException {
 
-        SimpleExoPlayer player = new SimpleExoPlayer.Builder(getContext()).build();
+        SimpleExoPlayer player = new SimpleExoPlayer.Builder(requireContext()).build();
         playerView.setPlayer(player);
         MediaItem mediaItem = MediaItem.fromUri(url);
         player.setMediaItem(mediaItem);
