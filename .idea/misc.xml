@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/drawable/happy_face.xml" value="0.2365" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/layout-v28/fragment_dashboard.xml" value="0.18651315789473685" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/layout-v28/fragment_home.xml" value="0.18651315789473685" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.17" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/layout/activity_player.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/layout/fragment_dashboard.xml" value="0.10822368421052632" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/layout/fragment_home.xml" value="0.18651315789473685" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/layout/fragment_notifications.xml" value="0.18651315789473685" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/layout/most_loved_items.xml" value="0.18651315789473685" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/layout/new_release_items.xml" value="0.18651315789473685" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/layout/recommended_items.xml" value="0.18651315789473685" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/layout/song_list_item.xml" value="0.18651315789473685" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/menu/bottom_nav_menu.xml" value="0.18651315789473685" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.128" />
+        <entry key="..\:/AndroidStudioProjects/Practice1/MusicPlayer/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.128" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

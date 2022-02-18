@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_500">#E15450</color>
+    <color name="red_200">#FAA7A7</color>
+<!--    <color name="primaryDarkColor">#ba000d</color>-->
+    <color name="blue_500">#349AE7</color>
+    <color name="blue_200">#6AB5E5</color>
+<!--    <color name="secondaryDarkColor">#0069c0</color>-->
+    <color name="black">#3C425B</color>
+    <color name="gray">#ADADAD</color>
+    <color name="black_light">#96AAB5</color>
+    <color name="light_gray">#F3F3F3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="favo_gray">#F2F2F2</color>
+    <color name="black_dark">#8598A3</color>
+</resources>

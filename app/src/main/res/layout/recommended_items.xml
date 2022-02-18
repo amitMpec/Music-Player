@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView2"
+    android:layout_width="108dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="15dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iconImg"
+        android:layout_width="108dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/scenery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/horizontalImageView" />
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/centurygothic"
+        android:text="Bump"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/iconImg"
+        app:layout_constraintTop_toBottomOf="@+id/iconImg" />
+
+    <TextView
+        android:id="@+id/singerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/centurygothic"
+        android:text="By Dianena"
+        android:textSize="9sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/songName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/songName"
+        app:layout_constraintTop_toBottomOf="@+id/songName" />
+
+    <ImageButton
+        android:id="@+id/favorite"
+        android:layout_width="29dp"
+        android:layout_height="31dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/img_back"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconImg" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

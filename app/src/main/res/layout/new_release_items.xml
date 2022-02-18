@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newReleaseId"
+    android:layout_width="131dp"
+    android:layout_height="177dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    app:cardElevation="18dp"
+    android:outlineSpotShadowColor="@color/red_500"
+    app:cardCornerRadius="15dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iconImg"
+            android:layout_width="108dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/scenery"
+            app:shapeAppearance="@style/horizontalImageView" />
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="30dp"
+            android:maxLength="5"
+            android:fontFamily="@font/centurygothic"
+            android:text="Bump"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/singerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:maxLength="10"
+            android:fontFamily="@font/centurygothic"
+            android:text="By Dianena"
+            android:textSize="9sp"
+            android:textStyle="normal" />
+
+        <ImageButton
+            android:id="@+id/favorite"
+            android:layout_width="29dp"
+            android:layout_height="31dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/img_back"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_baseline_favorite_border_24" />
+
+
+
+    </androidx.cardview.widget.CardView>
