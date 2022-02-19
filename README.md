@@ -1,6 +1,6 @@
 # Music-Player for just showcase use
 
-![ui1](https://user-images.githubusercontent.com/74000778/154692261-8f6e4462-2604-4fe0-a141-9e0b1ffe9b57.png)
 
+![musicui](https://user-images.githubusercontent.com/74000778/154792190-670a9fb6-4065-4a33-a26d-b74e56aa1bf9.png)
 
-![showcaseapp](https://user-images.githubusercontent.com/74000778/154691665-50d5d456-eeab-43ce-a8a6-66a9acad89b6.png)
+![musicshowcase](https://user-images.githubusercontent.com/74000778/154792194-f1c077de-0638-4f5b-b464-3974e55826a8.png)
